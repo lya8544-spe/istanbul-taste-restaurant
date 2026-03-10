@@ -6,98 +6,207 @@
 <title>Yemek Detayı - Istanbul Taste</title>
 <link rel="stylesheet" href="css/style.css">
 <style>
-
-body{
-font-family:Arial;
-margin:0;
-background:#f5f5f5;
+/* ===========================
+   Genel Ayarlar
+=========================== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f5f5f5;
 }
 
-header{
-background:#8B0000;
-color:white;
-padding:15px;
+header {
+    background: #8B0000;
+    color: white;
+    padding: 15px 20px;
 }
 
-nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-nav ul{
-display:flex;
-list-style:none;
+nav h2 {
+    margin: 0;
+    font-size: 24px;
 }
 
-nav ul li{
-margin:0 15px;
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
 }
 
-nav ul li a{
-color:white;
-text-decoration:none;
-font-weight:bold;
+nav ul li {
+    margin: 0 15px;
 }
 
-.container{
-padding:50px;
-max-width:1000px;
-margin:auto;
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
 }
 
-.dish{
-display:flex;
-flex-wrap:wrap;
-gap:40px;
-align-items:center;
+nav ul li a:hover {
+    color: #FFD700;
 }
 
-.dish img{
-width:400px;
-border-radius:10px;
+/* ===========================
+   Yemek Detay Alanı
+=========================== */
+.container {
+    padding: 50px 20px;
+    max-width: 1000px;
+    margin: auto;
 }
 
-.info{
-max-width:400px;
+.dish {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: flex-start;
+    justify-content: center;
 }
 
-.price{
-color:#8B0000;
-font-size:24px;
-font-weight:bold;
+.dish img {
+    width: 400px;
+    max-width: 100%;
+    border-radius: 10px;
 }
 
-.btn{
-background:#D4AF37;
-padding:10px 20px;
-text-decoration:none;
-color:black;
-border-radius:5px;
-display:inline-block;
-margin-top:20px;
+.info {
+    max-width: 400px;
+    text-align: left;
 }
 
-footer{
-background:#1a1a1a;
-color:white;
-text-align:center;
-padding:20px;
-margin-top:50px;
+.info h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
 }
 
-.whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-color:white;
-padding:15px;
-border-radius:50%;
-text-decoration:none;
-font-size:20px;
+.info p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    line-height: 1.5;
 }
 
+.price {
+    color: #8B0000;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* ===========================
+   Butonlar
+=========================== */
+.btn {
+    background: #D4AF37;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #b8942c;
+}
+
+/* ===========================
+   Footer
+=========================== */
+footer {
+    background: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+/* ===========================
+   WhatsApp Butonu
+=========================== */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.whatsapp:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+}
+
+/* ===========================
+   Mobil Uyumluluk
+=========================== */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    nav h2 {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    .dish {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .info {
+        max-width: 90%;
+        text-align: center;
+    }
+
+    .info h1 {
+        font-size: 28px;
+    }
+
+    .price {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .dish img {
+        width: 100%;
+    }
+
+    .info h1 {
+        font-size: 24px;
+    }
+
+    .info p {
+        font-size: 14px;
+    }
+
+    .price {
+        font-size: 18px;
+    }
+}
 </style>
 </head>
 
@@ -150,4 +259,5 @@ font-size:20px;
 
 <script src="js/script.js"></script>
 </body>
+
 </html>
