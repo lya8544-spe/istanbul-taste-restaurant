@@ -6,128 +6,249 @@
 <title>Istanbul Taste</title>
 <link rel="stylesheet" href="css/style.css">
 <style>
-
-body{
-font-family:Arial;
-margin:0;
-background:#f5f5f5;
+/* ===========================
+   Genel Ayarlar
+=========================== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f5f5f5;
 }
 
-header{
-background:#8B0000;
-color:white;
-padding:15px;
+header {
+    background: #8B0000;
+    color: white;
+    padding: 15px 20px;
 }
 
-nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-nav ul{
-display:flex;
-list-style:none;
+nav h2 {
+    margin: 0;
+    font-size: 24px;
 }
 
-nav ul li{
-margin:0 15px;
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
 }
 
-nav ul li a{
-color:white;
-text-decoration:none;
-font-weight:bold;
+nav ul li {
+    margin: 0 15px;
 }
 
-.hero{
-height:80vh;
-background:url("https://images.unsplash.com/photo-1600891964599-f61ba0e24092");
-background-size:cover;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-color:white;
-text-shadow:0 0 10px black;
-text-align:center;
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
 }
 
-.hero h1{
-font-size:48px;
+nav ul li a:hover {
+    color: #FFD700;
 }
 
-.btn{
-background:#D4AF37;
-color:black;
-padding:12px 25px;
-text-decoration:none;
-border-radius:5px;
-margin-top:20px;
-display:inline-block;
+/* ===========================
+   Hero Alanı
+=========================== */
+.hero {
+    height: 80vh;
+    background: url("https://images.unsplash.com/photo-1600891964599-f61ba0e24092") center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 0 0 10px black;
+    text-align: center;
+    padding: 0 20px;
 }
 
-.section{
-padding:50px;
-text-align:center;
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
 }
 
-.dishes{
-display:flex;
-justify-content:center;
-gap:30px;
-flex-wrap:wrap;
+.hero p {
+    font-size: 20px;
+    margin-bottom: 20px;
 }
 
-.card{
-background:white;
-padding:20px;
-border-radius:10px;
-width:250px;
-box-shadow:0 0 10px rgba(0,0,0,0.2);
+.btn {
+    background: #D4AF37;
+    color: black;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background 0.3s;
 }
 
-.card img{
-width:100%;
-border-radius:10px;
+.btn:hover {
+    background: #b8942c;
 }
 
-footer{
-background:#1a1a1a;
-color:white;
-text-align:center;
-padding:20px;
-margin-top:50px;
+/* ===========================
+   Bölümler ve Başlıklar
+=========================== */
+.section {
+    padding: 50px 20px;
+    text-align: center;
 }
 
-.whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-color:white;
-padding:15px;
-border-radius:50%;
-text-decoration:none;
-font-size:20px;
+h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
 }
 
-.card img{
-width:100%;
-height:180px;      /* tüm resimler aynı yükseklik */
-object-fit:cover;  /* resmi kırpar ama oranı bozmaz */
-border-radius:10px;
+/* ===========================
+   Yemek Kartları
+=========================== */
+.dishes {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
-.card{
-background:white;
-padding:20px;
-border-radius:10px;
-width:250px;
-box-shadow:0 0 10px rgba(0,0,0,0.2);
-display:flex;
-flex-direction:column;
-align-items:center;
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    max-width: 100%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.card p {
+    color: #8B0000;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* ===========================
+   Footer
+=========================== */
+footer {
+    background: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+/* ===========================
+   WhatsApp Butonu
+=========================== */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.whatsapp:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+}
+
+/* ===========================
+   Mobil Uyumluluk
+=========================== */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    nav h2 {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .section {
+        padding: 30px 15px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .dishes {
+        gap: 20px;
+    }
+
+    .card {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .card h3 {
+        font-size: 18px;
+    }
+
+    .card p {
+        font-size: 16px;
+    }
 }
 
 </style>
@@ -197,4 +318,5 @@ align-items:center;
 
 <script src="js/script.js"></script>
 </body>
+
 </html>
