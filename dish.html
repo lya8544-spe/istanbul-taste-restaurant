@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yemek Detayı - Istanbul Taste</title>
+<link rel="stylesheet" href="css/style.css">
+<style>
+
+body{
+font-family:Arial;
+margin:0;
+background:#f5f5f5;
+}
+
+header{
+background:#8B0000;
+color:white;
+padding:15px;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin:0 15px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+.container{
+padding:50px;
+max-width:1000px;
+margin:auto;
+}
+
+.dish{
+display:flex;
+flex-wrap:wrap;
+gap:40px;
+align-items:center;
+}
+
+.dish img{
+width:400px;
+border-radius:10px;
+}
+
+.info{
+max-width:400px;
+}
+
+.price{
+color:#8B0000;
+font-size:24px;
+font-weight:bold;
+}
+
+.btn{
+background:#D4AF37;
+padding:10px 20px;
+text-decoration:none;
+color:black;
+border-radius:5px;
+display:inline-block;
+margin-top:20px;
+}
+
+footer{
+background:#1a1a1a;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:50px;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px;
+border-radius:50%;
+text-decoration:none;
+font-size:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+<h2>Istanbul Taste</h2>
+
+<ul>
+<li><a href="index.html">Ana Sayfa</a></li>
+<li><a href="menu.html">Menü</a></li>
+<li><a href="gallery.html">Galeri</a></li> 
+<li><a href="about.html">Hakkımızda</a></li>
+<li><a href="contact.html">İletişim</a></li>
+</ul>
+
+</nav>
+</header>
+
+<div class="container">
+
+<div class="dish">
+
+
+<div class="info">
+
+<h1 id="dish-name"></h1>
+
+<img id="dish-img">
+
+<p id="dish-desc"></p>
+
+<p id="dish-price"></p>
+
+<a class="btn" href="https://wa.me/905073410436">WhatsApp ile Sipariş</a>
+
+</div>
+
+</div>
+
+</div>
+<a class="whatsapp" href="https://wa.me/905073410436">📞</a>
+
+<footer>
+
+<p>© 2026 Istanbul Taste Restaurant</p>
+
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
