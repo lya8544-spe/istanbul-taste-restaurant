@@ -224,6 +224,44 @@ footer {
         font-size: 16px;
     }
 }
+
+
+   /* ===========================
+   Section Divider
+=========================== */
+
+/* كل عنوان قسم */
+h2 {
+    font-size: 26px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+}
+
+/* خط تحت العنوان */
+h2::after {
+    content: "";
+    width: 80px;
+    height: 3px;
+    background: #8B0000;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+/* خط فاصل بين الأقسام */
+.section-divider {
+    width: 80%;
+    height: 1px;
+    background: #ddd;
+    margin: 50px auto;
+}
+
+/* مسافة بين الكروت */
+.card {
+    margin-bottom: 15px;
+}
 </style>
 </head>
 
@@ -326,14 +364,14 @@ Smoky XL Sandviç + Patates Kızartması (Orta) + Kutu İçecek -->
 <p class="price">455₺</p>
 <a href="dish.html?id=NuggetsSalata">Detay</a>
 </div>
- <br>  
+<div class="section-divider"></div>
 <h2>Çocuk Menüleri</h2>
 
 <div class="card"><img src="https://images.deliveryhero.io/image/fd-tr/Products/31839234.jpg"><h3>Linguine Köfte Menü</h3><p class="price">400₺</p><a href="dish.html?id=LinguineKofteMenu">Detay</a></div>
 <div class="card"><img src="https://images.deliveryhero.io/image/fd-tr/Products/31839235.jpg?width=500"><h3>Köfte Patates Menü</h3><p class="price">410₺</p><a href="dish.html?id=KoftePatatesMenu">Detay</a></div>
 <div class="card"><img src="https://images.deliveryhero.io/image/fd-tr/Products/31839236.jpg?width=500"><h3>Linguine Schnitzel Menü</h3><p class="price">315₺</p><a href="dish.html?id=LinguineSchnitzelMenu">Detay</a></div>
 <div class="card"><img src="https://images.deliveryhero.io/image/fd-tr/Products/31839237.jpg?width=500"><h3>Schnitzel Patates Menü</h3><p class="price">320₺</p><a href="dish.html?id=SchnitzelPatatesMenu">Detay</a></div>
- <br>  
+<div class="section-divider"></div>
 
 <h2>Tavada Tavuklar</h2>
 
@@ -350,14 +388,14 @@ Smoky XL Sandviç + Patates Kızartması (Orta) + Kutu İçecek -->
 <div class="card"><img src="https://images.deliveryhero.io/image/fd-tr/Products/31839248.jpg?width=500"><h3>Alaturka Tavuk Kavurma</h3><p class="price">512₺</p><a href="dish.html?id=AlaturkaTavukKavurma">Detay</a></div>
 <div class="card"><img src="https://images.deliveryhero.io/image/fd-tr/Products/31839249.jpg?width=500"><h3>Sweet Chili Soslu Tavuk</h3><p class="price">470₺</p><a href="dish.html?id=SweetChiliSosluTavuk">Detay</a></div>
 <div class="card"><img src="https://images.deliveryhero.io/image/fd-tr/Products/32299672.jpg?width=500"><h3>Cafê De Paris Soslu Tavuk</h3><p class="price">480₺</p><a href="dish.html?id=CafeDeParisSosluTavuk">Detay</a></div>
- <br>  
+<div class="section-divider"></div>
 
 <h2>Tavada Etler</h2>
 
 <div class="card"><img src="https://images.deliveryhero.io/image/fd-tr/Products/31839250.jpg?width=500"><h3>Meksika Soslu Dana</h3><p class="price">680₺</p><a href="dish.html?id=MeksikaSosluDana">Detay</a></div>
 <div class="card"><img src="https://images.deliveryhero.io/image/fd-tr/Products/31839251.jpg?width=500"><h3>Mantar Soslu Dana</h3><p class="price">690₺</p><a href="dish.html?id=MantarSosluDana">Detay</a></div>
 <div class="card"><img src="https://images.deliveryhero.io/image/fd-tr/Products/31839252.jpg?width=500"><h3>Alaturka Dana Kavurma</h3><p class="price">680₺</p><a href="dish.html?id=AlaturkaDanaKavurma">Detay</a></div>
- <br>  
+<div class="section-divider"></div>
 
 <h2>Izgaralar</h2>
 
@@ -369,7 +407,7 @@ Smoky XL Sandviç + Patates Kızartması (Orta) + Kutu İçecek -->
 <div class="card"><img src="https://images.deliveryhero.io/image/fd-tr/Products/31839260.jpg?width=500"><h3>Mixx Köfte & Pirzola</h3><p class="price">520₺</p><a href="dish.html?id=MixxKoftePirzola">Detay</a></div>
 <div class="card"><img src="https://images.deliveryhero.io/image/fd-tr/Products/31839262.jpg?width=500"><h3>Mixx Special Izgara</h3><p class="price">540₺</p><a href="dish.html?id=MixxSpecialIzgara">Detay</a></div>
 <div class="card"><img src="https://images.deliveryhero.io/image/fd-tr/Products/31839263.jpg?width=500"><h3>Mixx Schnitzel & Pirzola</h3><p class="price">495₺</p><a href="dish.html?id=MixxSchnitzelPirzola">Detay</a></div>
-    <br>  
+<div class="section-divider"></div>
 
 
 <h2>Makarnalar</h2>
@@ -382,7 +420,7 @@ Smoky XL Sandviç + Patates Kızartması (Orta) + Kutu İçecek -->
 <div class="card"><img src="https://images.deliveryhero.io/image/fd-tr/Products/31839269.jpg?width=500"><h3>Köfteli Penne</h3><p class="price">456₺</p><a href="dish.html?id=KofteliPenne">Detay</a></div>
 <div class="card"><img src="https://images.deliveryhero.io/image/fd-tr/Products/31839270.jpg?width=500"><h3>Penne Pirzola</h3><p class="price">432₺</p><a href="dish.html?id=PennePirzola">Detay</a></div>
 <div class="card"><img src="https://images.deliveryhero.io/image/fd-tr/Products/31839271.jpg?width=500"><h3>Linguine Köfte</h3><p class="price">420₺</p><a href="dish.html?id=LinguineKofte">Detay</a></div>
- <br>  
+<div class="section-divider"></div>
 
 <h2>Mantılar</h2>
 
@@ -394,7 +432,8 @@ Smoky XL Sandviç + Patates Kızartması (Orta) + Kutu İçecek -->
 <div class="card"><img src="https://images.deliveryhero.io/image/fd-tr/Products/31839283.jpg?width=500"><h3>Soğan Halkası</h3><p class="price">210₺</p><a href="dish.html?id=SoganHalkasi">Detay</a></div>
 <div class="card"><img src="https://images.deliveryhero.io/image/fd-tr/Products/31839284.jpg?width=500"><h3>Cheddar Topları</h3><p class="price">240₺</p><a href="dish.html?id=CheddarToplari">Detay</a></div>
 <div class="card"><img src="https://images.deliveryhero.io/image/fd-tr/Products/31839286.jpg?width=500"><h3>Chef Basket</h3><p class="price">300₺</p><a href="dish.html?id=ChefBasket">Detay</a></div>
- <br>  
+ <br><div class="section-divider"></div>
+  
 
 <h2>Salatalar</h2>
 
@@ -407,7 +446,7 @@ Smoky XL Sandviç + Patates Kızartması (Orta) + Kutu İçecek -->
 <div class="card"><img src="https://images.deliveryhero.io/image/fd-tr/Products/31839279.jpg?width=500"><h3>Hellim Salata</h3><p class="price">410₺</p><a href="dish.html?id=HellimSalata">Detay</a></div>
 <div class="card"><img src="https://images.deliveryhero.io/image/fd-tr/Products/31839280.jpg?width=500"><h3>Pirzola Salata</h3><p class="price">400₺</p><a href="dish.html?id=PirzolaSalata">Detay</a></div>
 <div class="card"><img src="https://images.deliveryhero.io/image/fd-tr/Products/31839281.jpg?width=500"><h3>Schnitzel Salata</h3><p class="price">410₺</p><a href="dish.html?id=SchnitzelSalata">Detay</a></div>
-    <br>  
+<div class="section-divider"></div>
 
 
 <h2>İçecekler</h2>
@@ -418,7 +457,7 @@ Smoky XL Sandviç + Patates Kızartması (Orta) + Kutu İçecek -->
 <div class="card"><img src="https://images.deliveryhero.io/image/fd-tr/Products/27396874.jpg?width=500"><h3>Fuse Tea</h3><p class="price">82₺</p><a href="dish.html?id=FuseTea">Detay</a></div>
 <div class="card"><img src="https://images.deliveryhero.io/image/fd-tr/Products/27396910.jpg?width=500"><h3>Ayran</h3><p class="price">76₺</p><a href="dish.html?id=Ayran">Detay</a></div>
 <div class="card"><img src="https://images.deliveryhero.io/image/fd-tr/Products/27396916.jpg?width=500"><h3>Su</h3><p class="price">50₺</p><a href="dish.html?id=Su">Detay</a></div>
- <br>  
+<div class="section-divider"></div>
 
 <h2>Diğer</h2>
 
