@@ -490,7 +490,138 @@ name:"Poşet",
 price:"1 TL",
 image:"https://images.deliveryhero.io/image/fd-tr/Products/27396929.jpg?width=500",
 desc:"Plastik poşet"
-}
+},
+
+   // Pidemler
+  PatatesliPidem: {
+    name: "Patatesli Pidem (45 cm.)",
+    price: "400₺",
+    image: "https://images.deliveryhero.io/image/fd-tr/Products/45235388.jpg?width=500",
+    desc: "Patates püresi, çarliston biber, kuru soğan, maydanoz, pul biber"
+  },
+  KıymalıPatateslim: {
+    name: "Kıymalı Patateslim (45 cm.)",
+    price: "450₺",
+    image: "https://images.deliveryhero.io/image/fd-tr/Products/45235389.jpg?width=500",
+    desc: "Dana kıyma, domates, patates, kuru soğan, çarliston biber, maydanoz, pul biber"
+  },
+  TavukluPidem: {
+    name: "Tavuklu Pidem (45 cm.)",
+    price: "455₺",
+    image: "https://images.deliveryhero.io/image/fd-tr/Products/45235390.jpg?width=500",
+    desc: "Tavuk göğüs, domates, çarliston biber, kaşar peynir, kırmızıbiber, kekik, pul biber, karabiber, kimyon"
+  },
+  KaşarlıPidem: {
+    name: "Kaşarlı Pidem (45 cm.)",
+    price: "460₺",
+    image: "https://images.deliveryhero.io/image/fd-tr/Products/45235391.jpg?width=500",
+    desc: "Kaşar peynir"
+  },
+  KıymalıPidem: {
+    name: "Kıymalı Pidem (45 cm.)",
+    price: "460₺",
+    image: "https://images.deliveryhero.io/image/fd-tr/Products/45235394.jpg?width=500",
+    desc: "Dana kıyma, domates, kuru soğan, çarliston biber, maydanoz"
+  },
+  KarışıkPidem: {
+    name: "Karışık Pidem (45 cm.)",
+    price: "495₺",
+    image: "https://images.deliveryhero.io/image/fd-tr/Products/45235396.jpg?width=500",
+    desc: "Dana kuşbaşı, dana kıyma, domates, çarliston biber, kuru soğan, kaşar peynir, maydanoz"
+  },
+  KıymalıKaşarlım: {
+    name: "Kıymalı Kaşarlım (45 cm.)",
+    price: "520₺",
+    image: "https://images.deliveryhero.io/image/fd-tr/Products/45235397.jpg?width=500",
+    desc: "Dana kıyma, domates, kuru soğan, çarliston biber, kaşar peynir, maydanoz"
+  },
+  KuşbaşılıPidem: {
+    name: "Kuşbaşılı Pidem (45 cm.)",
+    price: "580₺",
+    image: "https://images.deliveryhero.io/image/fd-tr/Products/45235398.jpg?width=500",
+    desc: "Dana kuşbaşı, kaşar peynir, domates, çarliston biber, maydanoz"
+  },
+  TavukluPatateslim: {
+    name: "Tavuklu Patateslim (45 cm.)",
+    price: "490₺",
+    image: "https://images.deliveryhero.io/image/fd-tr/Products/49166584.jpg?width=500",
+    desc: "Tavuk göğüs, domates, çarliston biber, kırmızıbiber, kaşar peynir, tuz, kekik, pul biber, karabiber, kimyon, patates püresi, kuru soğan, maydanoz, toz biber"
+  },
+  SosisliPidem: {
+    name: "Sosisli Pidem (45 cm.)",
+    price: "520₺",
+    image: "https://images.deliveryhero.io/image/fd-tr/Products/69858355.jpg?width=500",
+    desc: "Sosis"
+  },
+  KavurmalıPidem: {
+    name: "Kavurmalı Pidem (45 cm.)",
+    price: "620₺",
+    image: "https://images.deliveryhero.io/image/fd-tr/Products/70005601.jpg?width=500",
+    desc: "Dana kavurma, kaşar peynir"
+  },
+
+  // Lahmacun
+  Lahmacun: {
+    name: "Lahmacun (30 cm.)",
+    price: "310₺",
+    image: "https://images.deliveryhero.io/image/fd-tr/Products/45235387.jpg?width=500",
+    desc: "Dana kıyma, biber salçası, domates, kuru soğan, çarliston biber, kapya biber, maydanoz, karabiber, pul biber, lahmacun garnitürü"
+  },
+
+
+  // Yan Ürünler
+  CigKofte: {
+    name: "Çiğ Köfte (90 gr.)",
+    price: "220₺",
+    image: "https://images.deliveryhero.io/image/fd-tr/Products/66418042.jpg?width=500",
+    desc: "Marul, limon"
+  },
+
+  // Tatlılar
+  Sutlac: {
+    name: "Sütlaç",
+    price: "280₺",
+    image: "https://images.deliveryhero.io/image/fd-tr/Products/64439874.jpg?width=500",
+    desc: "Folyo kâsede sunulur"
+  },
+
+  // İçecekler
+  CappyVisne: {
+    name: "Cappy Vişne (33 cl.)",
+    price: "240₺",
+    image: "https://images.deliveryhero.io/image/fd-tr/Products/39502878.jpg?width=500",
+    desc: "Kutu içecek"
+  },
+  CocaCola: {
+    name: "Coca-Cola (45 cl.)",
+    price: "250₺",
+    image: "https://images.deliveryhero.io/image/fd-tr/Products/39502873.jpg?width=500",
+    desc: "Pet şişe"
+  },
+  
+  
+  DamlaSoda: {
+    name: "Damla Soda (20 cl.)",
+    price: "220₺",
+    image: "https://images.deliveryhero.io/image/fd-tr/Products/39502876.jpg?width=500",
+    desc: "Cam şişe"
+  },
+  
+  CappyKarisik: {
+    name: "Cappy Karışık (33 cl.)",
+    price: "260₺",
+    image: "https://images.deliveryhero.io/image/fd-tr/Products/39502879.jpg?width=500",
+    desc: "Kutu içecek"
+  },
+  CappySeftali: {
+    name: "Cappy Şeftali (33 cl.)",
+    price: "280₺",
+    image: "https://images.deliveryhero.io/image/fd-tr/Products/39502880.jpg?width=500",
+    desc: "Kutu içecek"
+  },
+  
+
+  
 };
 
 
